@@ -14,8 +14,8 @@ body {
 
 button {
     background-color: #fdfdfd;
-    color: #102f5e;
-    border: 2px solid #102f5e;
+    color: rgba(220,20,60);
+    border: 2px solid rgba(220,20,60);
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -24,3 +24,31 @@ button {
     align-items: center;
     transition: 0.4s;
 }
+
+
+
+button:hover {
+    background-color: rgba(220,20,60);
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+
+button i {
+    color: rgba(220,20,60);
+    font-weight: bold;
+    pointer-events: none; /*desabilita o evendo no i, quando clicar nele é como se estivesse clicando no button */
+}
+
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    /* display: none; */
+}
+
