@@ -48,7 +48,43 @@ input, select {
     padding: 0.25rem 0.5rem;
 }
 
+
 .hide {
     /* display: none; */
 }
+
+
+/* todo header */
+
+.todo-container {
+    max-width: 450px;
+    background-color: #fdfdfd;
+    margin: 3rem auto 0;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
