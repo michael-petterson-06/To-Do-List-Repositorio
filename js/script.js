@@ -38,11 +38,25 @@ const saveTodo = (text) => {
 
 todoForm.addEventListener('submit', (e) => {
     e.preventDefault();
-
     const inputValue = todoInput.value;
-
     saveTodo(inputValue);
+});
 
+
+document.addEventListener('click', (e) => {
+    const targetEl = e.target;
+    const parentEl = targetEl.closest('div'); // "closest" pega o elemento pai div mais próximo
+    if(targetEl.classList.contains('finish-todo')){
+        parentEl.classList.toggle('done'); // "toggle" se tem essa classe tira se não tem coloca
+    }
+
+    if(targetEl.classList.contains('remove-todo')){
+        parentEl.remove();
+    }
+
+    if (targetEl.classList.contains('edit-todo')){
+        console.log('editou')
+    }
 });
 
 
